@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>servlet-first-app</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>MyFirst</servlet-name>
+		<servlet-class>com.ty.Person</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>MySecond</servlet-name>
+		<servlet-class>com.ty.User</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>MyThird</servlet-name>
+		<servlet-class>com.ty.Hotel</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>MyFourth</servlet-name>
+		<servlet-class>com.ty.Room</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>MyFifth</servlet-name>
+		<servlet-class>com.ty.Bed</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>MyData</servlet-name>
+		<servlet-class>com.ty.MyData</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MyData</servlet-name>
+		<url-pattern>/mycustomer</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>MyFirst</servlet-name>
+		<url-pattern>/myperson</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>MySecond</servlet-name>
+		<url-pattern>/user</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MyThird</servlet-name>
+		<url-pattern>/myhotel</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MyFourth</servlet-name>
+		<url-pattern>/myroom</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MyFifth</servlet-name>
+		<url-pattern>/mybed</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyPersonData</servlet-name>
+		<servlet-class>com.ty.MyPersonData</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MyPersonData</servlet-name>
+		<url-pattern>/mypersondata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PersonDetails</servlet-name>
+		<servlet-class>com.ty.PersonDetails</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PersonDetails</servlet-name>
+		<url-pattern>/persondetails</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
